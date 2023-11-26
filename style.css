@@ -1,0 +1,147 @@
+body {
+    background-image: url('img/cosmo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    color: #dadada; /* Texto blanco para contrastar con el fondo */
+    font-size: 25px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    
+
+}
+
+.header h1 {
+    margin: 0;
+    color: rgb(24, 24, 182);
+    
+}
+
+.slider {
+    width: 80%;
+    margin: auto;
+    text-align: center; 
+    margin-top: 20px;
+}
+.slider img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: inline-block; /* Permite centrar verticalmente */
+    vertical-align: middle; /* Centra verticalmente */
+}
+
+/* Estilos para la información adicional */
+.info {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 0.5s; /* Ajusta el retraso según tus necesidades */
+    display: flex; /* Usa flexbox para colocar la imagen y el texto en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+}
+
+
+/* Estilo de la animación del texto */
+.animated-text {
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeInUp 1.5s forwards; /* Animación de fade in */
+}
+
+#unico {
+    text-align: center; /* Centra el texto */
+    color: rgb(219, 219, 224);
+
+}
+
+#unico p{
+    background-color: rgb(19, 26, 26);
+    
+}
+
+/* Animación de fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desplaza hacia arriba durante la animación */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para la información detallada de las naves */
+.ship-info {
+    margin-top: 30px;
+}
+
+.ship-info img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+}
+
+.ship-info p {
+    text-shadow: 1px 1px 2px rgba(7, 7, 7, 0.5); /* Ajusta según necesites */
+    margin-top: 10px;
+    color: black;
+}
+
+.section {
+    text-align: left;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.21s forwards;
+    
+}
+
+.section h2{
+    color: #3498db; /* Cambia este valor al color que desees */
+    font-size: 2em; /* Ajusta el tamaño de la fuente según tus preferencias */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para resaltar */
+    transition: color 0.3s ease-in-out; /* Efecto de transición de color suave */
+}
+
+.section h2:hover {
+    color: #e74c3c;
+}
+
+.section p{
+    color: #0a0c0e; /* Cambia este valor al color que desees */
+    font-size: 110%; /* Ajusta el tamaño de la fuente según tus preferencias */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para resaltar */
+    transition: color 0.3s ease-in-out; /* Efecto de transición de color suave */
+
+}
+
+.section p:hover {
+    color:azure;
+}
+
+.section img{
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+}
+
+/* Animación de fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilos adicionales según necesidades */
